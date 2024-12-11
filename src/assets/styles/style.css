@@ -1,6 +1,7 @@
 @import "./global.css";
 @import "./fonts.css";
 @import "./utils.css";
+@import url('assets/style/fonts.css');
 
 .test {
     color: yellow !important;
@@ -8,4 +9,98 @@
 
 .test {
     color: red !important;
+}
+
+.paragraph {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+}
+
+/* Стили для заголовка h1 */
+.title-h1 {
+    font-size: 64px;
+    color: #1F3F68;
+}
+
+/* Стили для заголовка h2 на странице контактов */
+.title-h2 {
+    font-weight: 500;
+    font-size: 44px;
+    text-align: center;
+}
+
+/* Стили для заголовков h3 */
+.title-h3 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Стили для заголовков h4 */
+.title-h4 {
+    font-size: 20px;
+    line-height: 30px;
+    color: #1F3F68;
+}
+
+/* Стили для полей ввода */
+.input-field {
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 0.4;
+    padding: 10px; 
+}
+
+/* Стили для кнопки отправки формы */
+.submit-button {
+
+    background: linear-gradient(to right, blue, purple); /* Градиент слева направо */
+    color: white; /* Цвет текста белый */
+    border: none; /* Убираем рамку */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    border-radius: 5px; /* Закругленные углы */
+    transition: background 0.3s; /* Плавный переход цвета при наведении */
+}   
+.submit-button:hover {
+    background: linear-gradient(to right, darkblue, darkviolet); /* Изменение градиента при наведении */
+}
+
+
+/* Стили для формы на странице "Контакты" */
+.contact-form {
+    background-image: url('../img/background.jpg'); 
+    background-size: cover; 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+.breadcrumbs {
+    font-size: 14px; /* Размер шрифта */
+    margin: 10px 0; /* Отступы сверху и снизу */
+    color: #555; /* Цвет текста */
+}
+
+.breadcrumbs a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #007bff; /* Цвет ссылок */
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+}
+
+.breadcrumbs span {
+    margin: 0 5px; /* Отступы между элементами */
+}
+
+.breadcrumbs span::after {
+    content: "›"; /* Символ разделителя */
+    margin: 0 5px; /* Отступы вокруг символа */
+}
+
+.breadcrumbs span:last-child::after {
+    content: ""; /* Убираем разделитель после последнего элемента */
 }
